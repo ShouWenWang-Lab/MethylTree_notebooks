@@ -1,6 +1,6 @@
 # MethylTree Notebooks
 
-This project contains 3 Jupyter notebooks:
+This project contains 4 Jupyter notebooks:
 
 1. **`mouse_LK_only_quality_checking.ipynb`**  
    This notebook is used for quality control after Bismark preprocessing. It evaluates data quality by analyzing the DNA methylation profile near TSS regions and the observed number of CpG sites.
@@ -16,7 +16,10 @@ This project contains 3 Jupyter notebooks:
    **Optional: add RNA and LARRY information in `df_sample`**.  
    In the DNA methylation data, samples are named based on the positions of the 96-well plate, while RNA and LARRY data use unique barcodes for each well. Using the `methyltree.metadata.mapping_from_plate_barcode_to_Lime_barcode` function, the well positions of the 96-well plate can be mapped to their corresponding barcodes. This allows RNA and LARRY data to be matched and integrated with DNA methylation data (based on the same well positions).
 
-3. **`MethylTree_all_data.ipynb`**  
+3. **`MethScan_notebook.ipynb`**  
+   This notebook uses the `MethScan` environment to generate files with MethScan. It needs to be used alternately with the quality control notebook and the downstream analysis notebook. The usage order is as follows: `quality_control`, `methscan_section1`, `quality_control`, `downstream_analysis`, `methscan_section2`, `downstream_analysis`.
+   
+4. **`MethylTree_all_data.ipynb`**  
    This notebook is used to generate the MethylTree lineage reconstruction heatmaps for all datasets mentioned in the paper. The required `config.yaml` file, metadata information, and AnnData for single-cell DNA methylation are stored in the `metadata/{dataset}` folder.
 
 ---
