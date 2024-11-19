@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project contains 4 Jupyter notebooks and 3 folders:
+This project contains 3 Jupyter notebooks and 3 folders:
 
 1. **`mouse_LK_only_quality_checking.ipynb`**  
    This notebook is used for quality control after Bismark preprocessing. It evaluates data quality by analyzing the DNA methylation profile near TSS regions and the observed number of CpG sites.
