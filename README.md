@@ -9,11 +9,11 @@ This project contains 4 Jupyter notebooks and 3 folders:
 
 2. **`mouse_LK_downstream_analysis.ipynb`**  
    This is the core notebook for MethylTree analysis, which includes the following steps:
-   
-   - Selection of genomic regions and generation of annotation files
+
    - Creation of AnnData objects for single-cell methylation data
    - Generation, correction, and cell-type signal removal of cell-cell similarity matrices
-
+   - Selection of genomic regions and generation of annotation files (This require you to install R and related packages `Rscripts`)
+     
    For datasets with multi-omics information (such as LK and humanCD34), the notebook provides an optional section:  
    **Optional: add RNA and LARRY information in df_sample**.  
    In the DNA methylation data, samples are named based on the positions of the 96-well plate, while RNA and LARRY data use unique barcodes for each well. Using the `methyltree.metadata.mapping_from_plate_barcode_to_Lime_barcode` function, the well positions of the 96-well plate can be mapped to their corresponding barcodes. This allows RNA and LARRY data to be matched and integrated with DNA methylation data (based on the same well positions).
