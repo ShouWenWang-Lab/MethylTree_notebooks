@@ -1,6 +1,6 @@
 # README
 
-## Using MethylTree to Analyze EPI-Clone Datasets (updated in 2025.9.29)
+## Using MethylTree to Analyze EPI-Clone Datasets (_Last updated: September 29, 2025_)
 
 In the `Using_MethylTree_to_analyze_EPI-Clone_datasets` folder, we applied **MethylTree** to analyze the transplanted mouse dataset `LARRY_mouse1` from the **EPI-Clone** study.  
 
